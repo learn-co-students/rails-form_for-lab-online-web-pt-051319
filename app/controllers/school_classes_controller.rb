@@ -5,7 +5,7 @@ class SchoolClassesController < ApplicationController
     end
 
     def new 
-        @school_class = SchoolClass.new(school_class_params)
+        @school_class = SchoolClass.new#(school_class_params)
     end
 
     def edit 
@@ -27,7 +27,7 @@ class SchoolClassesController < ApplicationController
     private 
 
     def school_class_params
-		params.require(:school_class).permit
+		params.require(:school_class).permit!
 	end
 
 end
