@@ -29,3 +29,4 @@ class SchoolClassesController < ApplicationController
    
   
   end
+  
